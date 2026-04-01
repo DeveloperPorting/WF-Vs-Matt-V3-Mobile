@@ -10,63 +10,63 @@ end
 function onCreate()
 	-- background shit
 
-	makeLuaSprite('space', 'lazulii/vsmattbrokenbackgroundspace', -550, -250);
+	makeLuaSprite('space', 'lazulii/space', -550, -250);
 	setScrollFactor('space', 0.05, 0.05);
 	scaleObject('space', 0.8*2, 0.8*2);
 
-	makeLuaSprite('plat1', 'lazulii/vsmattbrokenbackground platform 1', -1295 + 794, -760 + 1088);
+	makeLuaSprite('plat1', 'lazulii/platform1', -1295 + 794, -760 + 1088);
 	setScrollFactor('plat1', 0.9, 0.9);
 	scaleObject('plat1', 2.0, 2.0);
 
-	makeLuaSprite('ties1', 'lazulii/vsmattbrokenbackground ties1', -1295 + 1140, -760 + 1159);
+	makeLuaSprite('ties1', 'lazulii/ties1', -1295 + 1140, -760 + 1159);
 	setScrollFactor('ties1', 0.9, 0.9);
 	scaleObject('ties1', 2.0, 2.0);
 
-	makeLuaSprite('mattplat', 'lazulii/vsmattbrokenbackground platform matt', -1295 + 1077, -760 + 1480);
+	makeLuaSprite('mattplat', 'lazulii/platformmatt', -1295 + 1077, -760 + 1480);
 	setScrollFactor('mattplat', 1.0, 1.0);
 	scaleObject('mattplat', 1.0, 1.0);
 
-	makeLuaSprite('bfplat', 'lazulii/vsmattbrokenbackground platform bf', -1230 + 1981, -760 + 1127);
+	makeLuaSprite('bfplat', 'lazulii/platformbf', -1230 + 1981, -760 + 1127);
 	setScrollFactor('bfplat', 1.0, 1.0);
 	scaleObject('bfplat', 1.0, 1.0);
 	
-	makeLuaSprite('gfplat', 'lazulii/vsmattbrokenbackground platform gf', -1230 + 1512, -760 + 1294);
+	makeLuaSprite('gfplat', 'lazulii/platformgf', -1230 + 1512, -760 + 1294);
 	setScrollFactor('gfplat', 0.8, 0.8);
 	scaleObject('gfplat', 2.0, 2.0);
 
-	makeLuaSprite('plat5', 'lazulii/vsmattbrokenbackground platform 5', -1230, -760 + 1759);
+	makeLuaSprite('plat5', 'lazulii/platform5', -1230, -760 + 1759);
 	setScrollFactor('plat5', 1.2, 1.2);
 	scaleObject('plat5', 2.0, 2.0);
 
-	makeLuaSprite('plat4', 'lazulii/vsmattbrokenbackground platform 4', -1230 + 1482, -800 + 1972);
+	makeLuaSprite('plat4', 'lazulii/platform4', -1230 + 1482, -800 + 1972);
 	setScrollFactor('plat4', 1.2, 1.2);
 	scaleObject('plat4', 2.0, 2.0);
 
-	makeLuaSprite('plat3', 'lazulii/vsmattbrokenbackground platform 3', -1230 + 2504, -800 + 1795);
+	makeLuaSprite('plat3', 'lazulii/platform3', -1230 + 2504, -800 + 1795);
 	setScrollFactor('plat3', 1.2, 1.2);
 	scaleObject('plat3', 2.0, 2.0);
 
-	makeLuaSprite('plat2', 'lazulii/vsmattbrokenbackground platform 2', -1230 + 283, -800 + 1316);
+	makeLuaSprite('plat2', 'lazulii/platform2', -1230 + 283, -800 + 1316);
 	setScrollFactor('plat2', 1.0, 1.0);
 	scaleObject('plat2', 2.0, 2.0);
 
-	makeLuaSprite('ties3', 'lazulii/vsmattbrokenbackground ties3', -1450, -800 + 1139);
+	makeLuaSprite('ties3', 'lazulii/ties3', -1450, -800 + 1139);
 	setScrollFactor('ties3', 1.0, 1.0);
 	scaleObject('ties3', 2.0, 2.0);
 
-	makeLuaSprite('ties2', 'lazulii/vsmattbrokenbackground ties2', -1000 + 2704, -800 + 1245);
+	makeLuaSprite('ties2', 'lazulii/ties2', -1000 + 2704, -800 + 1245);
 	setScrollFactor('ties2', 1.2, 1.2);
 	scaleObject('ties2', 2.0, 2.0);
 
-	makeLuaSprite('ties4', 'lazulii/vsmattbrokenbackground ties4', -1000 + 2469, -800 + 1444);
+	makeLuaSprite('ties4', 'lazulii/ties4', -1000 + 2469, -800 + 1444);
 	setScrollFactor('ties4', 1.2, 1.2);
 	scaleObject('ties4', 2.0, 2.0);
 
-	makeLuaSprite('stars', 'lazulii/vsmattbrokenbackground stars', -1400, -800 + 948);
+	makeLuaSprite('stars', 'lazulii/stars', -1400, -800 + 948);
 	setScrollFactor('stars', 1.5, 1.5);
 	scaleObject('stars', 2.0, 2.0);
 
-	makeLuaSprite('light', 'lazulii/vsmattbrokenbackground light', -1400, -800);
+	makeLuaSprite('light', 'lazulii/light', -1400, -800);
 	setScrollFactor('light', 1.5, 1.5);
 	scaleObject('light', 3600.0, 2.0);
 

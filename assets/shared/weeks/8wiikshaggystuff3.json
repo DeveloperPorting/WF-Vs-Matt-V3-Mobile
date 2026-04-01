@@ -1,6 +1,6 @@
 {
     "storyName": "Wii Funkin' Shaggy Stuff",
-    "difficulties": "6K,4K",
+    "difficulties": "9K,4K",
     "hideFreeplay": false,
     "weekBackground": "",
     "weekBefore": "tutorial",
@@ -13,17 +13,8 @@
     "hideStoryMode": true,
     "songs": [
         [
-            "Lazulii",
-            "bluematt",
-            [
-                252,
-                142,
-                58
-            ]
-        ],
-        [
-            "Illusion",
-            "mattxbmatt",
+            "Heavenfall",
+            "rshaggyxbmatt",
             [
                 252,
                 142,
