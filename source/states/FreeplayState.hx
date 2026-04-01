@@ -228,7 +228,7 @@ class FreeplayState extends MusicBeatState
 		add(scoreText);
 		
 		#if mobile
-		addVirtualPad(LEFT_FULL, A_B);
+		addVirtualPad(LEFT_FULL, A_B_C);
 		#end
 		
 		player = new MusicPlayer(this);
@@ -270,11 +270,11 @@ class FreeplayState extends MusicBeatState
 						if (!Highscore.getWeekCompletion("2wiik2")) song.locked = true;
 					case "miisacre" | "lazulii" | "snacks":
 						if (!Highscore.getWeekCompletion("3wiikZ")) song.locked = true;
-					case "long awaited" | "god mode" | "broadcasting":
+					case "illusion" | "heavenfall" | "long awaited" | "god mode" | "broadcasting":
 						if (!Highscore.getWeekCompletion("4wiikFisticuffs")) song.locked = true;
 					case "foulplay":
 						var unlocked = true;
-						for (song in ["snacks", "long-awaited", "god-mode", "broadcasting", "lazulii"]) {
+						for (song in ["snacks", "long-awaited", "god-mode", "broadcasting", "lazulii", "illusion", "heavenfall"]) {
 							if (!Highscore.getCompletion(song)) {
 								unlocked = false;
 							}
@@ -481,7 +481,7 @@ class FreeplayState extends MusicBeatState
 			}
 		}
 
-		if(FlxG.keys.justPressed.CONTROL && !player.playingMusic)
+		if(FlxG.keys.justPressed.CONTROL #if mobile || virtualPad.buttonC.justPressed #end && !player.playingMusic)
 		{
 			persistentUpdate = false;
 			openSubState(new GameplayChangersSubstate());
