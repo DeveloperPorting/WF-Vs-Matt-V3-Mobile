@@ -270,8 +270,8 @@ class FreeplayState extends MusicBeatState
 						if (!Highscore.getWeekCompletion("2wiik2")) song.locked = true;
 					case "miisacre" | "lazulii" | "snacks":
 						if (!Highscore.getWeekCompletion("3wiikZ")) song.locked = true;
-					case "long awaited" | "god mode" | "broadcasting":
-						if (!Highscore.getWeekCompletion("4wiikFisticuffs")) song.locked = true;
+					case "illusion" | "heavenfall" | "long awaited" | "god mode" | "broadcasting":
+			//			if (!Highscore.getWeekCompletion("4wiikFisticuffs")) song.locked = true;
 					case "foulplay":
 						var unlocked = true;
 						for (song in ["snacks", "long-awaited", "god-mode", "broadcasting", "lazulii"]) {

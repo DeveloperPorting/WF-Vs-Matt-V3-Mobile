@@ -197,14 +197,18 @@ class ModchartLoader {
 
     }
     private inline function set(n:String, value:Float) {
+        #if LUA_ALLOWED
         if (PlayState.instance.modchartSprites.exists(n)) {
             PlayState.instance.modchartSprites.get(n).x = value;
         }
+        #end
     }
     private inline function get(n:String) {
+        #if LUA_ALLOWED
         if (PlayState.instance.modchartSprites.exists(n)) {
             return PlayState.instance.modchartSprites.get(n).x;
         }
+        #end
         return 0.0;
     }
     public function updateEvents() {

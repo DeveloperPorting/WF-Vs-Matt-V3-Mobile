@@ -34,7 +34,7 @@ class StarChecker {
 		//trace(Highscore.songScores);
 		//trace(Highscore.weekScores);
 
-		for (song in ["3hot", "4hot", "foulplay", "revolution", "swap", "mii-funkin", "snacks", "long-awaited", "fired-up", "battlefield", "motion-control", "destiny", "god-mode", "miisacre", "broadcasting", "lazulii"]) {
+		for (song in ["3hot", "4hot", "foulplay", "revolution", "swap", "mii-funkin", "snacks", "long-awaited", "fired-up", "battlefield", "motion-control", "destiny", "god-mode", "miisacre", "broadcasting", "lazulii", "illusion", "heavenfall"]) {
 			if (!Highscore.getCompletion(song)) {
 				return false;
 			}
