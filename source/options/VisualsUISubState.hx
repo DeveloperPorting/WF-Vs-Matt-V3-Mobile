@@ -30,7 +30,8 @@ class VisualsUISubState extends BaseOptionsMenu
 
 		// options
 
-		var noteSkins:Array<String> = Mods.mergeAllTextsNamed('images/noteSkins/list.txt');
+		var pathSkins:String = Paths.getSharedPath('images/noteSkins/list.txt');
+		var noteSkins:Array<String> = Assets.getText(pathSkins).trim().split('\n');
 		if(noteSkins.length > 0)
 		{
 			if(!noteSkins.contains(ClientPrefs.data.noteSkin))
@@ -47,7 +48,8 @@ class VisualsUISubState extends BaseOptionsMenu
 			noteOptionID = optionsArray.length - 1;
 		}
 		
-		var noteSplashes:Array<String> = Mods.mergeAllTextsNamed('images/noteSplashes/list.txt');
+		var pathSplashes:String = Paths.getSharedPath('images/noteSplashes/list.txt');
+		var noteSplashes:Array<String> = Assets.getText(pathSplashes).trim().split('\n');
 		if(noteSplashes.length > 0)
 		{
 			if(!noteSplashes.contains(ClientPrefs.data.splashSkin))
