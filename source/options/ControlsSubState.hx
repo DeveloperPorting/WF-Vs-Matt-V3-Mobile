@@ -126,6 +126,11 @@ class ControlsSubState extends MusicBeatSubstate
 		text.alignment = CENTERED;
 		text.setScale(0.4);
 		add(text);
+		
+		#if mobile
+		addVirtualPad(NONE, B);
+		addVirtualPadCamera();
+		#end
 
 		createTexts();
 	}
@@ -293,7 +298,7 @@ class ControlsSubState extends MusicBeatSubstate
 
 		if(!binding)
 		{
-			if(FlxG.keys.justPressed.ESCAPE || FlxG.gamepads.anyJustPressed(B))
+			if(FlxG.keys.justPressed.ESCAPE #if mobile || virtualPad.buttonB.justPressed #end || FlxG.gamepads.anyJustPressed(B))
 			{
 				close();
 				return;
@@ -347,7 +352,7 @@ class ControlsSubState extends MusicBeatSubstate
 		{
 			var altNum:Int = curAlt ? 1 : 0;
 			var curOption:Array<Dynamic> = options[curOptions[curSelected]];
-			if(FlxG.keys.pressed.ESCAPE || FlxG.gamepads.anyPressed(B))
+			if(FlxG.keys.pressed.ESCAPE #if mobile || virtualPad.buttonB.justPressed #end || FlxG.gamepads.anyPressed(B))
 			{
 				holdingEsc += elapsed;
 				if(holdingEsc > 0.5)
@@ -356,7 +361,7 @@ class ControlsSubState extends MusicBeatSubstate
 					closeBinding();
 				}
 			}
-			else if (FlxG.keys.pressed.BACKSPACE || FlxG.gamepads.anyPressed(BACK))
+			else if (FlxG.keys.pressed.BACKSPACE #if mobile || virtualPad.buttonB.justPressed #end || FlxG.gamepads.anyPressed(BACK))
 			{
 				holdingEsc += elapsed;
 				if(holdingEsc > 0.5)
