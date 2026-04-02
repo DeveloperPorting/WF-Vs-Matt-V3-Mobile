@@ -553,20 +553,20 @@
         {
             "name": "StarNova", 
             "mii": "starnova",
-            "miiOffset": [0,23],
-            "miiPoseOffset": [0,15],
-            "miiScale": 0.115,
-            "miiPoseScale": 0.115, 
+            "miiOffset": [0,13],
+            "miiPoseOffset": [0,13],
+            "miiScale": 0.105,
+            "miiPoseScale": 0.105, 
             "desc": "Unofficial Mobile Port",
             "categories": ["Coders"]
         },
         {
             "name": "FNF BR", 
             "mii": "fnfbr",
-            "miiOffset": [0,23],
-            "miiPoseOffset": [0,15],
-            "miiScale": 0.115,
-            "miiPoseScale": 0.115, 
+            "miiOffset": [0, 13],
+            "miiPoseOffset": [0, 13],
+            "miiScale": 0.105,
+            "miiPoseScale": 0.105, 
             "desc": "Unofficial Mobile Port",
             "categories": ["Coders"]
         }
