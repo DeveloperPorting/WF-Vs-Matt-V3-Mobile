@@ -555,8 +555,8 @@
             "mii": "starnova",
             "miiOffset": [0,23],
             "miiPoseOffset": [0,15],
-            "miiScale": 0.135,
-            "miiPoseScale": 0.125, 
+            "miiScale": 0.115,
+            "miiPoseScale": 0.115, 
             "desc": "Unofficial Mobile Port",
             "categories": ["Coders"]
         },
@@ -565,8 +565,8 @@
             "mii": "fnfbr",
             "miiOffset": [0,23],
             "miiPoseOffset": [0,15],
-            "miiScale": 0.135,
-            "miiPoseScale": 0.125, 
+            "miiScale": 0.115,
+            "miiPoseScale": 0.115, 
             "desc": "Unofficial Mobile Port",
             "categories": ["Coders"]
         }
