@@ -325,7 +325,9 @@ class FreeplayState extends MusicBeatState
 		} else if (FlxG.mouse.justMoved || FlxG.mouse.wheel != 0) {
 			mouseUpdateTimer = 1;
 		}
-
+		
+		if (controls.isInSubstate)
+		    controls.isInSubstate = false;
 
 		var currentPort:String = "";
 		var hidePort:Bool = false;

@@ -156,6 +156,11 @@ class NotesSubState extends MusicBeatSubstate
 		tipTxt.borderSize = 2;
 		add(tipTxt);
 		updateTip();
+		
+		#if mobile
+		addVirtualPad(NONE, B);
+		addVirtualPadCamera();
+		#end
 
 		controllerPointer = new FlxShapeCircle(0, 0, 20, {thickness: 0}, FlxColor.WHITE);
 		controllerPointer.offset.set(20, 20);
@@ -182,7 +187,7 @@ class NotesSubState extends MusicBeatSubstate
 		NUMPADSEVEN => '7', NUMPADEIGHT => '8', NUMPADNINE => '9', A => 'A', B => 'B', C => 'C', D => 'D', E => 'E', F => 'F'];
 
 	override function update(elapsed:Float) {
-		if (controls.BACK) {
+		if (controls.BACK #if mobile || virtualPad.buttonB.justPressed #end) {
 			//FlxG.mouse.visible = false;
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 			close();

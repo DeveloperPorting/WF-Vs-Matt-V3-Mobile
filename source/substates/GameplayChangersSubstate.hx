@@ -150,6 +150,9 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		{
 			changeSelection(1);
 		}
+		
+		if (!controls.isInSubstate)
+		    controls.isInSubstate = true;
 
 		if (controls.BACK) {
 			close();
