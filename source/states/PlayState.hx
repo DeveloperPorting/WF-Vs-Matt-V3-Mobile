@@ -1248,7 +1248,6 @@ class PlayState extends MusicBeatState
 	public function preloadMidSongVideo(path:String, ?placeOnHUD:Bool = false)
 	{
 		var video = new FlxVideoSprite();
-		video.autoVolumeHandle = false;
 		video.bitmap.volume = 0;
 		video.antialiasing = ClientPrefs.data.antialiasing;
 		video.load(Paths.video(path));
@@ -1286,15 +1285,6 @@ class PlayState extends MusicBeatState
 			return;
 
 		// canPause = false;
-
-		if (video.autoPause)
-		{
-			if (!FlxG.signals.focusGained.has(video.resume))
-				FlxG.signals.focusGained.add(video.resume);
-
-			if (!FlxG.signals.focusLost.has(video.pause))
-				FlxG.signals.focusLost.add(video.pause);
-		}
 
 		midSongVideoPlayTimes[index] = Conductor.songPosition;
 		video.bitmap.time = 0;
