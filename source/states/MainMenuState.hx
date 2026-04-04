@@ -1698,7 +1698,7 @@ class BreakPopupSubstate extends MusicBeatSubstate {
 		if (exitTimer > 0) {
 			exitTimer -= elapsed;
 		} else {
-			if (controls.ACCEPT) {
+			if (controls.ACCEPT || TouchUtil.justPressed()) {
 				MainMenuState.instance.persistentUpdate = true;
 				close();
 			}
