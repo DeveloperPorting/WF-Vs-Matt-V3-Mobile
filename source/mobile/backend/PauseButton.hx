@@ -30,7 +30,11 @@ class PauseButton extends FlxSprite
 
 		try
 		{
-			bitmap = BitmapData.fromFile(path);
+  #if ios
+		bitmap = openfl.utils.Assets.getBitmapData(path);
+  #else
+  bitmap = BitmapData.fromFile(path);
+  #end
 		}
 
 		if (bitmap != null)
